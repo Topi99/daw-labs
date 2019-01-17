@@ -1,16 +1,19 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navigation from './components/Navigation/Navigation';
+import Footer from './components/Footer/Footer';
+import Routes from './components/Routes/Routes';
+import './App.scss';
 
 const App = () => {
   return(
-    <main>
-      <nav>
-        nav
-      </nav>
-      <BrowserRouter>
-
-      </BrowserRouter>
-    </main>
+    <Router>
+      <>
+        <Navigation />
+        <Routes />
+        <Footer />        
+      </>
+    </Router>
   );
 }
 
