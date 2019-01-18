@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700');
+
+@mixin raleway() {
+  font-family: 'Raleway', sans-serif;
+}
+
+@mixin open_sans() {
+  font-family: 'Open Sans', sans-serif;
+}

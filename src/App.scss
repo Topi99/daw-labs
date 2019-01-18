@@ -1,1 +1,8 @@
 @import 'partials/reset';
+@import 'partials/colors';
+@import 'partials/fonts';
+
+body {
+  background-color: lima(100, .5);
+  @include open_sans();
+}

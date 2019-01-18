@@ -1,10 +1,10 @@
 import React from 'react';
-import './Navigation.module.scss';
+import styles from './Navigation.module.scss';
 
 const Navigation = (...props) => {
   return(
-    <nav>
-      nav
+    <nav className={styles.nav}>
+      
     </nav>
   );
 }

@@ -1,0 +1,8 @@
+@import '../../partials/colors';
+
+nav.nav {
+  background-color: lima(300, 1);
+  width: 100vw;
+  height: 10vh;
+  box-shadow: 0px 2px 3px black(0.3);
+}

@@ -1,0 +1,17 @@
+@function lima($number, $alpha) {
+  @if $number == 100 {
+    @return rgba(209, 255, 130, $alpha);
+  } @else if $number == 300 {
+    @return rgba(155, 219, 77, $alpha);
+  } @else if $number == 500 {
+    @return rgba(104, 183, 35, $alpha);
+  } @else if $number == 700 {
+    @return rgba(58, 145, 4, $alpha);
+  } @else if $number == 900 {
+    @return rgba(32, 107, 0, $alpha);
+  }
+}
+
+@function black($alpha) {
+  @return rgba(0,0,0,$alpha);
+}
