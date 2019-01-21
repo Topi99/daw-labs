@@ -1,0 +1,13 @@
+footer {
+  background-color: rgb(20, 20, 20);
+  position: absolute;
+  width: 100%;
+  min-height: 15vh;
+  margin-top: 10vh;
+  padding: 30px;
+  box-sizing: border-box;
+  
+  p, a {
+    color: white;
+  }
+}
