@@ -6,3 +6,8 @@ body {
   background-color: lima(100, .5);
   @include open_sans();
 }
+
+main {
+  margin-top: 15vh !important;
+  border-radius: 10px;
+}
