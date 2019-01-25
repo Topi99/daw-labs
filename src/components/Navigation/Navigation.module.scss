@@ -9,6 +9,7 @@ nav.nav {
   background-color: lima(300, 1);
   @include depth_2(inset 0px 1px 1px lima(100, .55));
   display: flex;
+  z-index: 1000;
 }
 
 .navElement {

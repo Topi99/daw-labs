@@ -1,7 +1,7 @@
 import React from 'react';
 import styles  from './QuestionsElements.module.scss';
 
-export const QuestionsElements = (props) => {
+export const QuestionsElements = props => {
   return(
     <>
       {

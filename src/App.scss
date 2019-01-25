@@ -11,6 +11,8 @@ body {
 main {
   margin-top: 15vh !important;
   min-height: 60vh;
+  position: relative;
+  z-index: 0;
 }
 
 .card {
@@ -18,10 +20,27 @@ main {
   background-color: #fff;
   @include depth_1();
   border-radius: 10px;
-  min-height: 100vh;
 }
 
 section.card {
   padding: 50px;
+}
+
+article.card, a.card {
+  width: calc(33.33% - 14px);
+  float: left;
+  padding: 10px;
+  box-sizing: border-box !important;
+  margin: 7px;
+  text-decoration: none;
+
+  .card--title {
+    font-size: 125%;
+    text-align: center; 
+  }
+  
+  .card--desc {
+    font-size: 95%;
+  }
 }
 
