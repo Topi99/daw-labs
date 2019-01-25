@@ -1,4 +1,5 @@
 import React from 'react';
+import styles  from './QuestionsElements.module.scss';
 
 export const QuestionsElements = (props) => {
   return(
@@ -7,7 +8,7 @@ export const QuestionsElements = (props) => {
         props.questions.map(q => {
           return(
             <li>
-              <p>{q.q}</p>
+              <p className={styles.question}>{q.q}</p>
               <p>{q.a}</p>
             </li>
           )

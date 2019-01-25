@@ -7,7 +7,8 @@ nav.nav {
   width: 100vw;
   height: 10vh;
   background-color: lima(300, 1);
-  @include depth_2(inset 0px 1px 1px lima(100, .37));
+  @include depth_2(inset 0px 1px 1px lima(100, .55));
+  display: flex;
 }
 
 .navElement {
@@ -21,12 +22,31 @@ nav.nav {
   text-decoration: none;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
   transition: .4s ease-out;
+  margin: 0;
+  float: left;
 }
 
-.navElement:hover {
+.navElement:hover, .active {
   border-color: white;
 }
 
 .mainNavE {
   font-size: 1.5em;
+}
+
+.labs li{
+  list-style: none;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding-left: 30%;
+  height: 100%;
+  .navElement {
+    width: 33.33%;
+
+  }
 }

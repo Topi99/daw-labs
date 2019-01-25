@@ -1,6 +1,7 @@
 @import 'partials/reset';
 @import 'partials/colors';
 @import 'partials/fonts';
+@import 'partials/common';
 
 body {
   background-color: lima(100, .5);
@@ -9,5 +10,18 @@ body {
 
 main {
   margin-top: 15vh !important;
-  border-radius: 10px;
+  min-height: 60vh;
 }
+
+.card {
+  box-sizing: border-box;
+  background-color: #fff;
+  @include depth_1();
+  border-radius: 10px;
+  min-height: 100vh;
+}
+
+section.card {
+  padding: 50px;
+}
+
