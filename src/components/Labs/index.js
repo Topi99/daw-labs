@@ -1,6 +1,7 @@
 import Labs from './Labs';
 import Lab from './Lab';
+import IntroJS from './IntroJS';
 
-export default Labs;
+const List = Labs;
 
-export { Lab };
+export { List, Lab, IntroJS };

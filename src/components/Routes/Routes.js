@@ -1,17 +1,29 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from '../../components/Home/Home';
 import styles from './Routes.module.scss';
-import Labs, { Lab } from '../Labs';
+import * as Labs from '../Labs';
 import * as Consts from '../../constants';
 
+const IntroJS = props => {
+  return(
+    <Labs.Lab match={{params: {id:2}}} >
+      <Labs.IntroJS/>
+    </Labs.Lab>
+  )
+}
+
 const Routes = (...props) => {
+  
   return(
     <main className={styles.main}>
-      <Route exact path="/" component={Home} />
-      <Route exact path={Consts.ROOT_ROUTE} component={Home} />
-      <Route path={Consts.LABS_ROUTE} component={Labs} />
-      <Route path={Consts.LAB_ROUTE+'/:id'} component={Lab} />
+      <Switch>
+        <Route exact path="/" component={ Home } />
+        <Route exact path={ Consts.ROOT_ROUTE } component={ Home } />
+        <Route path={ Consts.LABS_ROUTE } component={ Labs.List } />
+        <Route exact path={ Consts.LAB_ROUTE+'/2' } component={ IntroJS } />
+        <Route path={ Consts.LAB_ROUTE+'/:id' } component={ Labs.Lab } />
+      </Switch>
     </main>
   );
 }

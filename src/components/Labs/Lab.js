@@ -3,11 +3,12 @@ import styles from '../Home/Home.module.scss';
 import { QuestionsElements } from './QuestionsElements';
 import { FirebaseContext } from '../Firebase';
 import * as Consts from '../../constants';
+import LabStyles from './QuestionsElements.module.scss';
 
 const Lab = props => {
   return(
     <FirebaseContext.Consumer>
-      {firebase => <LabBase match={props.match} firebase={firebase} />}
+      {firebase => <LabBase match={props.match} firebase={firebase} children={props.children}/>}
     </FirebaseContext.Consumer>
   );
 }
@@ -28,6 +29,10 @@ const LabBase = props => {
       <h2 className={styles.subTitle}>{lab.nombre}</h2>
       <p className={styles.biggerFont}>Topiltzin Hernández Mares</p>
       <p>{lab.descripcion}</p>
+
+      <article className={LabStyles.labChildren}>
+        { props.children }
+      </article>
 
       <article>
         <h3 className={styles.biggerFont}>Preguntas</h3>
