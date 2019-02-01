@@ -15,7 +15,7 @@ const IntroJS = props => {
 
 const EventsJS = props => {
   return(
-    <Labs.Lab match={{params:{id:2}}}>
+    <Labs.Lab match={{params:{id:3}}}>
       <Labs.EventsJS />
     </Labs.Lab>
   );
