@@ -69,8 +69,6 @@ const IntroJS = props => {
       proms.push(ar.reduce((a, b) => a + b, 0)/ar.length);
     }
 
-    console.log(proms);
-
     return proms.toString();
   }
 

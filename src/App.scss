@@ -15,6 +15,23 @@ main {
   z-index: 0;
 }
 
+form p {
+  padding-top: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+  outline-color: lima(300, .9);
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid lima(300, 1);
+  transition: .4s ease-out;
+}
+
+input.bad {
+  border-color: fresa(700, .9);
+  outline-color: fresa(300, .9);
+}
+
 .card {
   box-sizing: border-box;
   background-color: #fff;

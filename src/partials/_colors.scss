@@ -12,6 +12,20 @@
   }
 }
 
+@function fresa($number, $alpha) {
+  @if $number == 100 {
+    @return rgba(255, 140, 130, $alpha);
+  } @else if $number == 300 {
+    @return rgba(237, 83, 83, $alpha);
+  } @else if $number == 500 {
+    @return rgba(198, 38, 46, $alpha);
+  } @else if $number == 700 {
+    @return rgba(161, 8, 5, $alpha);
+  } @else if $number == 900 {
+    @return rgba(122, 0, 0, $alpha);
+  }
+}
+
 @function black($alpha) {
   @return rgba(0,0,0,$alpha);
 }
