@@ -5,6 +5,8 @@ const EventsJS = props => {
   const [passState, setPassState] = useState('bad');
   const [pass1, setPass1] = useState('');
   const [pass2, setPass2] = useState('');
+  const [emailState, setEmailState] = useState('bad');
+  const [email, setEmail] = useState('');
 
   const checkPass = (value) => {
     if((pass1 === value || pass2 === value) && (pass1 !== '' && pass2 !== '')) {
@@ -26,6 +28,17 @@ const EventsJS = props => {
     checkPass(value);
   }
 
+  const checkMail = value => {
+    const regex = /\S+@\S+\.\S+/;
+    return regex.test(value);
+  }
+  
+  const handleEmailChange = e => {
+    let value = e.target.value;
+    setEmailState(value);
+    setEmailState(checkMail(value) ? 'good' : 'bad');
+  }
+
   return(
     <ol>
       <li>
@@ -45,6 +58,16 @@ const EventsJS = props => {
       <li>
         <p className={styles.question}>Artículos</p>
         <a href="/daw-labs/extras/tienda/">Ir a Tienda</a>
+      </li>
+      <li>
+        <p className={styles.question}>Validación de email</p>
+        <p>Esto es un simple validador de direcciones de email. Lo hago aquí mismo para no tener que crear otra página.</p>
+        <form>
+          <p>
+            <label to="email">Ingresa tu correo: </label>
+            <input type="text" name="email" className={emailState} onChange={handleEmailChange} />
+          </p>
+        </form>
       </li>
     </ol>
   );
