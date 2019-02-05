@@ -61,3 +61,55 @@ article.card, a.card {
   }
 }
 
+.relative {
+  position: relative;
+  overflow: hidden;
+  height: 35vh;
+
+  .marca {
+    position: relative;
+    opacity: .2;
+    width: 100%;
+  }
+
+  .hipster {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#help {
+  position: relative;
+  top: -35px;
+  left: 45%;
+  background-color: rgb(110, 150, 211);
+  width: 20vw;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.4);
+  transition: .4s ease-out;
+}
+
+#interval, #timeout {
+  color: white;
+  padding: 50px;
+  transition: .4s ease-out;
+}
+
+#interval {
+  background-color: rgb(134, 50, 155);
+}
+
+#timeout {
+  background-color: rgb(155, 110, 50);
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}

@@ -31,6 +31,7 @@ const Routes = (...props) => {
         <Route path={ Consts.LABS_ROUTE } component={ Labs.List } />
         <Route exact path={ Consts.LAB_ROUTE+'/2' } component={ IntroJS } />
         <Route exact path={ Consts.LAB_ROUTE+'/3' } component={ EventsJS } />
+        <Route exact path={ Consts.LAB_ROUTE+'/4' } component={ Labs.DynamicJS } />
         <Route path={ Consts.LAB_ROUTE+'/:id' } component={ Labs.Lab } />
       </Switch>
     </main>
