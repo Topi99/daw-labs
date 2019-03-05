@@ -3,6 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 ## Mis laboratorios con backend se encuentran [aquí](https://github.com/Topi99/daw-labs-express). 
+Las preguntas siguen en donde siempre, en el apartado de cada laboratorio.
 
 In the project directory, you can run:
 
